@@ -1,0 +1,34 @@
+function agregarTarea() [{
+    // 1. Obtener el valor del campo de texto
+    let nuevaTareaTexto = document.getElementById("nuevaTarea").value;
+
+    // 2. Validar que el campo no esté vacío
+    if (nuevaTareaTexto == "") {
+    alert("Por favor, ingrese una tarea");
+    return; // Detiene la función si no hay texto
+}
+
+    // 3. Crear elemento <li> para la tarea
+    let nuevaTarea = document.createElement("li");
+
+    // 4. Asignar el texto de la tarea al <li>
+    nuevaTarea.textContent = nuevaTareaTexto;
+
+    // 5. Crear botón "Eliminar"
+    let botonEliminar = document.createElement("button");
+    botonEliminar.textContent = "Eliminar";
+
+    // 6. Asignar función para eliminar la tarea al hacer clic
+    botonEliminar.onclick = function() {
+    nuevaTarea.remove(); // Elimina el <li> padre del botón
+};
+
+    // 7. Agregar el botón "Eliminar" al <li>
+    nuevaTarea.appendChild(botonEliminar);
+
+    // 8. Agregar la tarea (<li>) a la lista (<ul>)
+    document.getElementById("listaTareas").appendChild(nuevaTarea);
+
+    // 9. Limpiar el campo de texto
+    document.getElementById("nuevaTarea").value = "";
+}
