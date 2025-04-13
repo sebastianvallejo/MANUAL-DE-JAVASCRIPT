@@ -1,5 +1,5 @@
 /**
- * CRUD Application - Script Principal
+ * CRUD BASICO- Script Principal
  * Maneja las operaciones básicas de creación, lectura, actualización y eliminación
  * de usuarios mediante una interfaz web.
  */
