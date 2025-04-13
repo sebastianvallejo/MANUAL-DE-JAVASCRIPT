@@ -1,0 +1,38 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Estilos para encabezados h1 y h2 */
+h1, h2 {
+    color: #333;
+}
+
+/* Estilos para formularios */
+form {
+    margin-bottom: 20px;
+}
+
+/* Estilos para campos de entrada */
+input {
+    margin: 5px;
+    padding: 5px;
+}
+
+/* Estilos básicos para botones */
+button {
+    padding: 5px 10px;
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilos para celdas de tabla (encabezados y datos) */
+th, td {
+    padding: 10px;
+    text-align: left;
+}
